@@ -76,6 +76,10 @@ header {
   align-items: center;
 }
 
+#characterAmountNumber {
+  width: 3rem;
+}
+
 /* Used to help align form */
 form {
   display: flex;

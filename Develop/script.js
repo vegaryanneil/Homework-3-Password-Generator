@@ -1,7 +1,6 @@
 // Assignment Code
 // For slider and box
 const characterAmountNumber = document.getElementById("characterAmountNumber");
-const characterAmountRange = document.getElementById("characterAmountRange");
 const passwordGeneratorForm = document.getElementById("passwordGeneratorForm");
 const passwordDisplay = document.getElementById("passwordGeneratorForm");
 const includeUppercaseElement = document.getElementById("includeUppercase");
