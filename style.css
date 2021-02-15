@@ -42,6 +42,7 @@ header {
 .card-header {
   justify-content: center;
   text-align: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -60,17 +61,11 @@ header {
 }
 
 .card-header::after {
-  content: " ";
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
 }
-.character-amount {
-  display: flex;
-  align-items: center;
-}
-
 #characterAmountNumber {
   width: 3rem;
 }
@@ -88,7 +83,6 @@ form {
   grid-template-columns: auto auto;
   row-gap: 1rem;
   column-gap: 3rem;
-  justify-content: left;
   align-items: center;
 }
 
@@ -110,6 +104,12 @@ form {
   clear: both;
 }
 
+.btn-container {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -122,20 +122,11 @@ form {
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
-  text-align: center;
   cursor: pointer;
 }
 
-button[disabled] {
-  cursor: default;
-  background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
-}
 /* simplified padding to 1 line */
-#password {
+#passwordDisplay {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -157,9 +148,10 @@ button[disabled] {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+    text-align: center;
   }
 
-  #password {
+  #passwordDisplay {
     font-size: 1rem;
   }
 }
