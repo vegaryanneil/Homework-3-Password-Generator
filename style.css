@@ -66,11 +66,6 @@ header {
   background: #e7e9eb;
   height: 2px;
 }
-
-.card-body {
-  min-height: 100px;
-}
-
 .character-amount {
   display: flex;
   align-items: center;
