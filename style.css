@@ -50,12 +50,12 @@ header {
   color: black;
   padding: 1rem;
   border: 1px solid;
-  height: 2rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   word-break: break-all;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   grid-column: span 2;
 }
 
