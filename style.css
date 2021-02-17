@@ -45,7 +45,7 @@ header {
   align-items: center;
   margin: 0;
 }
-
+/* Renamed to class */
 .password-display {
   background-color: white;
   color: black;
@@ -59,13 +59,15 @@ header {
   border-radius: 0.5rem;
   grid-column: span 2;
 }
-
+/* Deleted code content since it provided nothing */
 .card-header::after {
   display: block;
   width: 100%;
   background: #e7e9eb;
   height: 2px;
 }
+
+/* Added this to shorten the box to hold three digits only */
 #characterAmountNumber {
   width: 3rem;
 }
@@ -77,7 +79,7 @@ form {
   align-items: left;
   flex-direction: column;
 }
-/* Created form */
+/* Created form*/
 .form {
   display: grid;
   grid-template-columns: auto auto;
@@ -86,29 +88,10 @@ form {
   align-items: center;
 }
 
-.card-footer {
-  text-align: center;
-}
-
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
 .btn-container {
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  position: relative;
+  left: 69.5%;
 }
 .btn {
   border: none;
@@ -117,7 +100,6 @@ form {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
-  display: inline-block;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
@@ -125,7 +107,7 @@ form {
   cursor: pointer;
 }
 
-/* simplified padding to 1 line */
+/* simplified padding to 1 line, added id */
 #passwordDisplay {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -150,7 +132,7 @@ form {
     padding: 10px 15px;
     text-align: center;
   }
-
+  /* Renamed id */
   #passwordDisplay {
     font-size: 1rem;
   }

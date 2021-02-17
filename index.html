@@ -8,36 +8,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Re-did majority of HTML. It looked messy to me so I started from scratch -->
     <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-        <div class="card">
-          <div class="card-header">
-            <h3 class="password-display" id="passwordDisplay">Generate Password</h3>
-          </div>
-      <form id="passwordGeneratorForm" class="form">
-        <label for="characterAmountNumber">Number Of Characters</label>
-          <div class="character-amount-container">
-        <input type="range" min="8" max="128" value="8" id="characterAmountRange">
-        <input class="number-input" type="number" min="8" max="128" value="8" id="characterAmountNumber">
-          </div>    
-          
-        
-          <label for="includeUppercase">Include Uppercase</label>
-        <input type="checkbox" id="includeUppercase"> 
-        
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+       <!-- Creates the container in the middle of the screen -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="password-display" id="passwordDisplay">Generate Password</h3>
+        </div>
+          <form id="passwordGeneratorForm" class="form">
+            <label for="characterAmountNumber">Number Of Characters</label>
+        <div class="character-amount-container">
+          <!-- Slider function, and Number Input for characters -->
+          <!-- Set a Min of 8 and max of 128 characters -->
+          <input type="range" min="8" max="128" value="8" id="characterAmountRange">
+          <input class="number-input" type="number" min="8" max="128" value="8" id="characterAmountNumber">
+        </div>    
+        <!-- Checkbox to include uppercase -->
+        <label for="includeUppercase">Include Uppercase</label>
+        <input type="checkbox" id="includeUppercase">
+        <!-- Checkbox to include numbers -->
         <label for="includeNumbers">Include Numbers</label>
         <input type="checkbox" id="includeNumbers">  
-        
+        <!-- Checkbox to include symbols -->
         <label for="includeSymbols">Include Symbols</label>
         <input type="checkbox" id="includeSymbols">
-
+        <!-- Button to generate password -->
         <div class="btn-container">
           <button type="submit" class="btn">Generate Password</button>
         </div>
       </div>
-
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
